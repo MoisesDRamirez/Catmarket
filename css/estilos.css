@@ -1,10 +1,29 @@
-body,html{
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+:root{
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color:black;
+--box:0px  0px 2px 1px #e6e5e9;
+
+}
+
+html,body{
     padding: 0;
     margin: 0;
+    font-family: 'Gayathri', sans-serif;
+    height: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
 }
 
 .cabezera{
-    background-color: green;
+    background-color: var(--green-color);
     height: 50px;
     
 }
@@ -13,6 +32,7 @@ body,html{
     height: 100%;
     justify-content:space-between;
     align-items: center;
+    padding-right: 10px;
 
 }
 .navegacion ol{
@@ -22,12 +42,75 @@ body,html{
 }
 .navegacion a{
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     padding: 0px 5px;
     font-size: 18px;
 }
 .img-nav{
-    padding-left: 10px;
+    padding-left: 25px;
     padding-top: 5px;
     
+}
+.content{
+    height: 800px;
+    /* background-color: red; */
+}
+.title{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.products{
+    height: 45%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 5%;
+    background-image: url("../images/curve.png");
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+   
+} 
+.product{
+    position: relative;
+    z-index: 1;
+    top:-50%;
+    height: 300px;
+    width: 250px;
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+}
+.product-image{
+    text-align: center;
+}
+.title-produc{
+    padding-left: 10px;
+}
+.product p {
+    padding: 5px 10px;
+}
+.boton{
+    text-align: center;
+    padding-top: 15px;
+}
+.boton a{
+    text-decoration: none;
+    padding: 10px 30px;
+    /* border: 1px solid greenyellow; */
+    color: var(--white-color);
+    background-color: var(--green-color);
+    border-radius: 2px;
+}
+.Main-button:hover{
+    background-color: #6eab36;
+
+}
+footer{
+    background-color: blue
 }
