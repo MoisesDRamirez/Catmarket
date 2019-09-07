@@ -52,11 +52,12 @@ html,body{
     
 }
 .content{
-    height: 800px;
+    display: grid;
+    grid-template-rows: auto auto auto;
     /* background-color: red; */
 }
 .title{
-    height: 40%;
+    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -64,7 +65,7 @@ html,body{
     padding-bottom: 100px;
 }
 .products{
-    height: 45%;
+    height: 300px;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
@@ -110,6 +111,29 @@ html,body{
 .Main-button:hover{
     background-color: #6eab36;
 
+}
+.home-product{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content{
+    width: 250px;
+    height: 260px;
+    padding: 0px 60px;
+}
+.home-img{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.title-home{
+    text-align: center;
+    padding: 10px 0px;
+
+}
+.home-img img{
+    width: 150px;
 }
 footer{
     background-color: blue
