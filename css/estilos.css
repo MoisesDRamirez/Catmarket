@@ -200,7 +200,8 @@ footer{
     .description-metion{
         padding: 0px 10px;
     }
-    footer{
+    .description-direction,
+    .description-footer{
         font-size: 22px;
     }
     
