@@ -188,7 +188,7 @@ footer{
     color: var(--white-color);
     text-decoration: none;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1440px){
     .mention{
         width: 240px;
         padding-left: 15px;
