@@ -136,6 +136,16 @@ html,body{
 .home-img img{
     width: 150px;
 }
+.content-mentions{
+    height: 400px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-content: center
+}
+.title-mentions{
+    text-align: var(--text-center);
+}
 .mentions{
     display: flex;
     justify-content: center;
@@ -204,5 +214,66 @@ footer{
     .description-footer{
         font-size: 22px;
     }
+    
+}
+@media screen and (max-width: 768px){
+    .title h1{
+        font-size: 26px;
+    }
+    .products{
+        height: 600px;
+        grid-template-columns: auto;
+
+    }
+    .product{
+        height:320px;
+        width: 320px;
+    }
+    .title-produc {
+        padding-left: 30px;
+    }
+    .product p {
+        padding: 10px 30px;
+    }
+    .home-product {
+
+        height: 1100px;
+        flex-direction: column;
+        border-bottom: 2px solid gray;
+    }
+    .home-content {
+        width: 300px;
+        height: 260px;
+        padding: 30px 0px;
+    }
+    .content-mentions{
+        height: 1200px;
+    }
+    .title-mentions{
+        height: 60px;
+    }
+    .title-mentions h2{
+        padding-top: 30px;
+    }
+
+    .mentions{
+        flex-direction: column;
+        height: 1100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .mention{
+        padding: 20px 0px;
+    }
+    footer{
+        height: 140px;
+        grid-template-columns: auto;
+    }
+    .content-footer{
+        flex-direction: column;
+        padding-top: 5px;
+        height: 80%;
+    }
+
     
 }
