@@ -52,6 +52,9 @@ html,body{
     padding-top: 5px;
     
 }
+.link-menu {
+    display: none;
+}
 .content{
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -276,4 +279,26 @@ footer{
     }
 
     
+}
+@media screen and (max-width: 650px){
+    .link-menu {
+        display: initial;
+    }
+    .menu{
+        display: none;
+    }
+    .menu.activate{
+        display: flex;
+        position:absolute;
+        top:0;
+        bottom: 0;
+        left:0;
+        background: rgba(250, 13, 13, 0.459);
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .navegacion ol{
+        flex-direction: column;
+    }
 }
