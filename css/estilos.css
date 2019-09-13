@@ -310,3 +310,33 @@ footer{
         text-align: var(--text-center);
     }
 }
+@media screen and (max-width: 400px){
+    .menu.activate{
+        right: -34px;
+    }
+    .product{
+        width: 300px;
+    }
+    .home-content{
+        width: 280px;
+    }
+    .direction{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width: 350px){
+
+    .product{
+        width: 260px;
+    }
+    .home-content{
+        width: 240px;
+    }
+    .direction{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
