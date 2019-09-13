@@ -86,7 +86,7 @@ html,body{
     position: relative;
     z-index: 1;
     top:-50%;
-    height: 300px;
+    height: 320px;
     width: 250px;
     background-color: var(--white-color);
     box-shadow: var(--box);
@@ -194,12 +194,15 @@ footer{
     height: 40px;
     border-radius: 50%;
 }
-.description-direction{
-    font-size: 25px;
+
+.direction{
+    display: flex;
 }
-.description-direction a{
+.direction a{
     color: var(--white-color);
     text-decoration: none;
+    font-size: 22px;
+    padding-left: 10px;
 }
 @media screen and (max-width: 1440px){
     .mention{
@@ -291,7 +294,7 @@ footer{
         display: flex;
         position:absolute;
         top:0;
-        bottom: 70%;
+        bottom: 60%;
         left:0;
         background: rgba(72, 97, 59, 0.459);
         right: 0;
@@ -300,6 +303,10 @@ footer{
     }
     .navegacion ol{
         flex-direction: column;
+        text-align: var(--text-center);
+    }
+    .title h1{
+        padding: 0px 60px;
         text-align: var(--text-center);
     }
 }
