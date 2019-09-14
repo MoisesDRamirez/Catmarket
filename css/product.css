@@ -141,3 +141,85 @@ footer{
     font-size: 22px;
     padding-left: 10px;
 }
+@media screen and (max-width:1024px){
+    .products{
+        width: 90%;
+    }
+    .product-reverse{
+        padding-left: 10%;
+    }
+}
+@media screen and (max-width: 768px){
+
+    footer{
+        height: 140px;
+        grid-template-columns: auto;
+    }
+    .content-footer{
+        flex-direction: column;
+        padding-top: 5px;
+        height: 80%;
+    }
+
+    
+}
+@media screen and (max-width: 650px){
+    .link-menu {
+        display: initial;
+    }
+    .menu{
+        display: none;
+    }
+    .menu.activate{
+        display: flex;
+        position:absolute;
+        top:0;
+        bottom: 60%;
+        left:0;
+        background: rgba(72, 97, 59, 0.459);
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .navegacion ol{
+        flex-direction: column;
+        text-align: var(--text-center);
+    }
+
+}
+@media screen and (max-width: 500px){
+    .menu.activate{
+        right: 0px;
+    }
+    .content{
+        height: 1400px;
+    }
+    .products{
+        gap: 15%;
+    }
+    .product,.product-reverse {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "img" "title " "description";
+        width: 300px;
+    }
+    .title{
+        padding: 5% 0px;
+        text-align: var(--text-center);
+    }
+
+    .direction{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width: 350px){
+
+    .direction{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
