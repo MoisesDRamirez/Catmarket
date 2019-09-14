@@ -312,7 +312,7 @@ footer{
 }
 @media screen and (max-width: 400px){
     .menu.activate{
-        right: -34px;
+        right: 0px;
     }
     .product{
         width: 300px;
