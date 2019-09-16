@@ -1,0 +1,141 @@
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+:root{
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color:black;
+--box:0px  0px 2px 1px #e6e5e9;
+--text-center:center;
+
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gayathri', sans-serif;
+    height: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+}
+
+.cabezera{
+    background-color: var(--green-color);
+    height: 50px;
+    
+}
+.navegacion{
+    display: flex;
+    height: 100%;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 10px;
+
+}
+.navegacion ol{
+    display: flex;
+    list-style: none;
+    padding-right: 10px;
+}
+.navegacion a{
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 0px 5px;
+    font-size: 18px;
+}
+.img-nav{
+    padding-left: 25px;
+    padding-top: 5px;
+    
+}
+.link-menu {
+    display: none;
+}
+.content{
+    display: grid;
+    height: 600px;
+    width: 100%;
+    grid-template-columns: 25% auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.product{
+    height: 260px;
+    box-shadow: var(--box);
+    padding: 0px 20px
+}
+.img{
+    text-align: var(--text-center);
+}
+.modulo-pago{
+    height: 330px;
+    width: 340px;
+    box-shadow: var(--box);
+    display: flex;
+    justify-content: center;
+
+}
+.data{
+    width: 303px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 2px;
+}
+.modulo-pago label{
+    display: block;
+    padding: 10px 0;
+}
+.boton{
+    display: block;
+    margin: 20px 0px;
+    width: 100%;
+    background-color: var(--green-color);
+    color: white;
+    padding: 10px 0;
+    border: 1px solid;
+    border-radius: 2px;
+}
+footer{
+    background-color: #59595f;
+    height: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-footer{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.description-direction{
+    font-size: 25px;
+}
+.description-footer{
+    font-size: 25px;
+    padding-right: 10px;
+}
+.img-platzi{
+    height: 50px;
+    
+}
+.img-platzi img{
+    height: 40px;
+    border-radius: 50%;
+}
+
+.direction{
+    display: flex;
+}
+.direction a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 22px;
+    padding-left: 10px;
+}
