@@ -85,6 +85,7 @@ html,body{
     height: 35px;
     border: 1px solid;
     border-radius: 2px;
+    padding:0px 10px; 
 }
 .modulo-pago label{
     display: block;
@@ -138,4 +139,90 @@ footer{
     text-decoration: none;
     font-size: 22px;
     padding-left: 10px;
+}
+@media screen and (max-width:1024px){
+
+}
+@media screen and (max-width: 768px){
+    .content{
+        height: 800px;
+        grid-template-columns: 350px;
+        grid-template-rows: 400px 400px;
+        gap:0px;
+    }
+    .product{
+        margin-top: 20%;
+    }
+    footer{
+        height: 140px;
+        grid-template-columns: auto;
+    }
+    .content-footer{
+        flex-direction: column;
+        padding-top: 5px;
+        height: 80%;
+    }
+
+    
+}
+@media screen and (max-width: 650px){
+    .link-menu {
+        display: initial;
+    }
+    .menu{
+        display: none;
+    }
+    .menu.activate{
+        display: flex;
+        position:absolute;
+        top:0;
+        bottom: 60%;
+        left:0;
+        background: rgba(72, 97, 59, 0.459);
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .navegacion ol{
+        flex-direction: column;
+        text-align: var(--text-center);
+    }
+
+}
+@media screen and (max-width: 500px){
+    .menu.activate{
+        right: 0px;
+    }
+
+    .title{
+        padding: 5% 0px;
+        text-align: var(--text-center);
+    }
+
+    .direction{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .content{
+        grid-template-columns: 300px;
+    }
+    .modulo-pago{
+        width: 300px;
+    }
+    .data{
+        width: 240px;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+
+    .direction{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
