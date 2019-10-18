@@ -61,7 +61,7 @@ html,body{
 }
 .content{
     display: grid;
-    height: 600px;
+    height:770px;
     width: 100%;
     grid-template-columns: 25% auto;
     justify-content: center;
@@ -175,6 +175,9 @@ footer{
     }
     .menu{
         display: none;
+    }
+    .navegacion a{
+        color: white;
     }
     .menu.activate{
         display: flex;

@@ -294,6 +294,9 @@ footer{
     .menu{
         display: none;
     }
+    .navegacion a{
+        color: white;
+    }
     .menu.activate{
         display: flex;
         position:absolute;
